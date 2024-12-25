@@ -7,5 +7,10 @@ Node.js + Express + SQLite3 を用いて簡易的な学内通貨システムを�
 1. リポジトリをクローン（またはzipを展開）する
 2. プロジェクトルートで依存関係をインストール
 
+
+##開始方法
+
    ```bash
-   npm install
+   npm run start
+   
+
