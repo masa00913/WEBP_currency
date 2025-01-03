@@ -70,7 +70,6 @@ async function loginUser(req, res) {
     const token = jwt.sign({ userId: user.id, username }, JWT_SECRET, {
       expiresIn: "1h", // 1時間でトークン期限切れ（サンプル）
     });
-
     return res.json({ message: "ログイン成功", token });
   } catch (error) {
     console.error("loginUserエラー:", error);

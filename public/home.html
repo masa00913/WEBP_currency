@@ -1,30 +1,14 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>学内通貨システム</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="main.js"></script>
 </head>
 <body>
-  <h1>学内通貨システム</h1>
-
-  <!-- ユーザ登録フォーム -->
-  <section>
-    <h2>ユーザ登録</h2>
-    <input type="text" id="register-username" placeholder="ユーザ名" />
-    <input type="password" id="register-password" placeholder="パスワード" />
-    <button onclick="registerUser()">登録</button>
-  </section>
-
-  <!-- ログインフォーム -->
-  <section>
-    <h2>ログイン</h2>
-    <input type="text" id="login-username" placeholder="ユーザ名" />
-    <input type="password" id="login-password" placeholder="パスワード" />
-    <button onclick="login()">ログイン</button>
-  </section>
-
-  <!-- ユーザ情報表示 -->
+    <h2>ホーム</h2>
+    <!-- ユーザ情報表示 -->
   <section>
     <h2>プロフィール</h2>
     <button onclick="getProfile()">プロフィール取得</button>
@@ -54,6 +38,5 @@
     <ul id="transaction-list"></ul>
   </section>
 
-  <script src="main.js"></script>
 </body>
 </html>

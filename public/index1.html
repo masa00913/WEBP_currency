@@ -1,0 +1,60 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>学内通貨システム</title>
+  
+</head>
+<body>
+  <h1>学内通貨システム</h1>
+
+  <!-- ユーザ登録フォーム -->
+  <section>
+    <h2>ユーザ登録</h2>
+    <input type="text" id="register-username" placeholder="ユーザ名" />
+    <input type="password" id="register-password" placeholder="パスワード" />
+    <button onclick="registerUser()">登録</button>
+  </section>
+
+  <!-- ログインフォーム -->
+  <section>
+    <h2>ログイン</h2>
+    <input type="text" id="login-username" placeholder="ユーザ名" />
+    <input type="password" id="login-password" placeholder="パスワード" />
+    <button onclick="login()">ログイン</button>
+  </section>
+
+  <!-- ユーザ情報表示 -->
+  <section>
+    <h2>プロフィール</h2>
+    <button onclick="getProfile()">プロフィール取得</button>
+    <p id="profile-area"></p>
+  </section>
+
+  <!-- 残高表示 -->
+  <section>
+    <h2>残高</h2>
+    <button onclick="getBalance()">残高取得</button>
+    <p id="balance-area"></p>
+  </section>
+
+  <!-- 送金フォーム -->
+  <section>
+    <h2>送金</h2>
+    <input type="number" id="send-toUserId" placeholder="送金先ユーザID" />
+    <input type="number" id="send-amount" placeholder="送金額" />
+    <button onclick="sendCurrency()">送金実行</button>
+    <p id="send-result"></p>
+  </section>
+
+  <!-- 取引履歴 -->
+  <section>
+    <h2>取引履歴</h2>
+    <button onclick="getTransactions()">履歴取得</button>
+    <ul id="transaction-list"></ul>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
